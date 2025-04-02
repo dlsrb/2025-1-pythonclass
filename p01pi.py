@@ -20,4 +20,22 @@ import matplotlib.pyplot as plt
 plt.plot([1,3,4])
 plt.show()
 
-import opencv
+# import matplotlib.pyplot as plt
+# import numpy as np
+#
+# p = 1.0
+# l = []
+# for n in range(1, 5, 1):
+#     p = p * ((2*n+1)**2 - 1)/(2*n+1)**2.0
+#     l.append(p*4)
+#
+# print(l)
+#
+# x = np.linspace(0,5,101)
+# y = x ** 2
+#
+# plt.scatter(x,y)
+# plt.show()
+#
+# # plt.plot([1,2.5,3])
+# # plt.show()
