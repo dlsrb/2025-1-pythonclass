@@ -13,10 +13,12 @@ from itertools import count
 # n = 97: 118번만에 1로 도달
 # n = 73: 115번만에 1로 도달
 
-maxvalue = 0
-maxvaluen = 0
+maxvalue = -100
+maxvaluen = -100
 max2value = 0
 max2valuen = 0
+max3value = 0
+max3valuen = 0
 
 for n in range(1,100):
     # print(f'{n=}')
@@ -35,6 +37,8 @@ for n in range(1,100):
 
     print(f'{ncount}')
     if maxvalue < ncount:
+        max3value = max2value
+        max3valuen =max2valuen
         max2value = maxvalue
         max2valuen = maxvaluen
         maxvalue = ncount
@@ -42,5 +46,9 @@ for n in range(1,100):
     elif ncount > max2value:
         max2value = ncount
         max2valuen = n
+    elif ncount > max3value:
+        max3value = ncount
+        max3valuen = n
 print(f'{maxvalue=}, {maxvaluen=}')
-print(f'{max2value=}, {max2valuen}')
+print(f'{max2value=}, {max2valuen=}')
+print(f'{max3value=},{max3valuen=}')
