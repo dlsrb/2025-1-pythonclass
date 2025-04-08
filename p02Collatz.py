@@ -20,7 +20,7 @@ max2valuen = 0
 max3value = 0
 max3valuen = 0
 
-for n in range(1,100):
+for n in range(1,1000):
     # print(f'{n=}')
     ncount = 0
     i = n # n과 i를 따로둬 n은 초기값만 존재
