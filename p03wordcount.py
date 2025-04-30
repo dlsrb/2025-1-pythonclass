@@ -17,6 +17,7 @@ textlist = text.split() #스트링을 리스트로 변환
 print(textlist)
 
 # 간단버전
+# 연습
 wordcount = dict()
 
 for word in textlist:
@@ -31,6 +32,7 @@ for key, value in wordcount.items():
     print(f'{key}   {value}')
 
 #두번째 버전: defaultdict
+#실제
 from collections import defaultdict
 wordcount = defaultdict(lambda:0)
 for word in textlist:
